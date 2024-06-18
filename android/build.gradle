@@ -6,6 +6,10 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.0'
     }
+    ext.kotlin_version = '1.8.20'
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
 
 allprojects {
