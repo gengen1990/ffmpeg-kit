@@ -1017,6 +1017,7 @@ android_ndk_cmake() {
     -DCMAKE_SYSROOT="${ANDROID_SYSROOT}" \
     -DCMAKE_FIND_ROOT_PATH="${ANDROID_SYSROOT}" \
     -DCMAKE_INSTALL_PREFIX="${LIB_INSTALL_PREFIX}" \
+    -DBUILD_TESTING=OFF \
     -H"${BASEDIR}"/src/"${LIB_NAME}" \
     -B"${BUILD_DIR}" \
     "${ASM_OPTIONS}" \
