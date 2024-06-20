@@ -13,6 +13,7 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libavcodec_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libavcodec_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -21,6 +22,7 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libavfilter_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libavfilter_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -29,6 +31,7 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libavdevice_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libavdevice_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -37,6 +40,7 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libavformat_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libavformat_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -46,6 +50,7 @@ LOCAL_MODULE := libavutil_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libavutil_neon.so
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -54,6 +59,7 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libswresample_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libswresample_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -62,4 +68,5 @@ LOCAL_ARM_NEON := ${MY_ARM_NEON}
 LOCAL_MODULE := libswscale_neon
 LOCAL_MODULE_FILENAME := $(LOCAL_MODULE)
 LOCAL_SRC_FILES := libswscale_neon.so
+LOCAL_SHARED_LIBRARIES += c++_shared
 include $(PREBUILT_SHARED_LIBRARY)

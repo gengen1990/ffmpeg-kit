@@ -89,6 +89,8 @@ APP_STL := ${APP_STL}
 
 APP_PLATFORM := android-${API}
 
+APP_ALLOW_MISSING_DEPS := true
+
 APP_CFLAGS := -O3 -DANDROID ${LTS_BUILD_FLAG}${BUILD_DATE} -Wall -Wno-deprecated-declarations -Wno-pointer-sign -Wno-switch -Wno-unused-result -Wno-unused-variable
 
 APP_LDFLAGS := -Wl,--hash-style=both

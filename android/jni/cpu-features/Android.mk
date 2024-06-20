@@ -4,5 +4,6 @@ include $(CLEAR_VARS)
 LOCAL_ARM_MODE := $(MY_ARM_MODE)
 LOCAL_MODULE := cpu-features
 LOCAL_SRC_FILES := libndk_compat.a
+LOCAL_SHARED_LIBRARIES += c++_shared
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include/ndk_compat
 include $(PREBUILT_STATIC_LIBRARY)
